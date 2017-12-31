@@ -3,12 +3,17 @@ const app = express();
 global.fetch = require('node-fetch');
 const cc = require('cryptocompare');
 
+
+app.set('view engine', 'pug')
+
 app.listen(3000, function() {
   console.log('listening on 3000');
 });
 
+
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.render('index', { title: 'Hey', message: 'Hello there!' })
+/*
   // cc
   //   .coinList()
   //   .then(coinList => {
@@ -20,6 +25,7 @@ app.get('/', (req, res) => {
     //console.log(prices);
     // -> { USD: 1100.24, EUR: 1039.63 }
     var BTCprice = prices;
+    res.render('index', {title: 'USD', message: 'Price is: ',});
     console.log(BTCprice.USD);
-  });
+  }); */
 });
