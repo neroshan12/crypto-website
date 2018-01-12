@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,12 @@
   "homepage": "https://github.com/neroshan12/crypto-website#readme",
   "dependencies": {
     "cryptocompare": "^0.3.0",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "node-fetch": "^1.7.3",
-    "pug": "^2.0.0-rc.4"
+    "node-fetch": "^1.7.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  },
   "description": ""
 }
