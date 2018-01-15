@@ -36,9 +36,46 @@
 		</div>
 	</div>
 </nav>
-    <div><%= name1 %> - $<%=price1%></div>
-    <div><%= name2 %> - $<%=price2%> </div>
-    <div><%= name3 %> - $<%=price3%> </div>
+    <div class="jumbotron">
+    	<div class="container">
+    		<h1>Latest prices.</h1>
+    		<p>A cryptocurrency (or crypto currency) is a digital asset designed to work as a medium of exchange that uses cryptography to secure its transactions, to control the creation of additional units, and to verify the transfer of assets.</p>
+    		<br>
+    	</div>
+    </div>
+
+    <!-- <p><%= name1 %> - $<%=price1%></p>
+    <p><%= name2 %> - $<%=price2%></p>
+    <p><%= name3 %> - $<%=price3%></p>
+ -->
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-4">
+    			<span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+    			<h3><%= name1 %></h3>
+    			<p>$<%= price1 %></p>
+    		</div>
+    		<div class="col-md-4">
+    			<span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+    			<h3><%= name2 %></h3>
+    			<p>$<%= price2 %></p>
+    		</div>
+    		<div class="col-md-4">
+    			<span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+    			<h3><%= name3 %></h3>
+    			<p>$<%= price3 %></p>
+    		</div>
+    	</div>
+    </div>
+
+
+
+
+
+
+
+
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
