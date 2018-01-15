@@ -35,17 +35,25 @@ app.listen(3000, function() {
 app.get('/', (req, res) => {
   cc.coinList().then(coinList => {
     let list = coinList;
-    cc.priceMulti(['BTC', 'ETH', 'XRP'], 'USD').then(multiPrices => {
-      let prices = multiPrices;
-      res.render('index.ejs', {
-        name1: list.Data.BTC.CoinName,
-        name2: list.Data.ETH.CoinName,
-        name3: list.Data.XRP.CoinName,
-        price1: prices.BTC.USD,
-        price2: prices.ETH.USD,
-        price3: prices.XRP.USD
+    cc
+      .priceMulti(['BTC', 'ETH', 'XRP'], ['USD', 'EUR', 'GBP'])
+      .then(multiPrices => {
+        let prices = multiPrices;
+        res.render('index.ejs', {
+          name1: list.Data.BTC.CoinName,
+          name2: list.Data.ETH.CoinName,
+          name3: list.Data.XRP.CoinName,
+          usdPriceBTC: prices.BTC.USD,
+          usdPriceETH: prices.ETH.USD,
+          usdPriceXRP: prices.XRP.USD,
+          gbpPriceBTC: prices.BTC.GBP,
+          gbpPriceETH: prices.ETH.GBP,
+          gbpPriceXRP: prices.XRP.GBP,
+          eurPriceBTC: prices.BTC.EUR,
+          eurPriceETH: prices.ETH.EUR,
+          eurPriceXRP: prices.XRP.EUR
+        });
       });
-    });
   });
 });
 

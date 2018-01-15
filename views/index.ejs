@@ -44,27 +44,29 @@
     	</div>
     </div>
 
-    <!-- <p><%= name1 %> - $<%=price1%></p>
-    <p><%= name2 %> - $<%=price2%></p>
-    <p><%= name3 %> - $<%=price3%></p>
- -->
 
     <div class="container">
     	<div class="row">
     		<div class="col-md-4">
     			<span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
     			<h3><%= name1 %></h3>
-    			<p>$<%= price1 %></p>
+    			<p>$<%= usdPriceBTC %></p>
+          <p>£<%= gbpPriceBTC %></p>
+          <p>€<%= eurPriceBTC %></p>
     		</div>
     		<div class="col-md-4">
     			<span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
     			<h3><%= name2 %></h3>
-    			<p>$<%= price2 %></p>
+    			<p>$<%= usdPriceETH %></p>
+          <p>£<%= gbpPriceETH %></p>
+          <p>€<%= eurPriceBTC %></p>
     		</div>
     		<div class="col-md-4">
     			<span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
     			<h3><%= name3 %></h3>
-    			<p>$<%= price3 %></p>
+    			<p>$<%= usdPriceXRP %></p>
+          <p>£<%= gbpPriceXRP %></p>
+          <p>€<%= eurPriceBTC %></p>
     		</div>
     	</div>
     </div>
