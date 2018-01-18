@@ -1,0 +1,43 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+body {
+  background-color: black;
+}
+
+/*color: #f7f7f7;
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2 {
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+  color: #cdcdcd;
+}
+
+.navbar-inverse {
+  background: #2e2f31;
+  border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+  color: #f7f7f7;
+  font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover {
+  background: #27a967;
+}
+
+.dropdown-menu {
+  background: #2e2f31;
+  border-radius: 0;
+  border: 0;
+}
+.dropdown-menu li a {
+  padding: 10px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+  background: #2c463c;
+}*/
