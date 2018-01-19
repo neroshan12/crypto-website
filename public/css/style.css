@@ -1,12 +1,10 @@
-/*.navbar {
+.navbar {
   margin-bottom: 0;
-}*/
-
-body {
-  background-color: green;
 }
 
-/*color: #f7f7f7;
+body {
+  background: #3e4649;
+  color: #f7f7f7;
   font-family: 'Montserrat', sans-serif;
 }
 h1,
@@ -14,10 +12,19 @@ h2 {
   font-weight: bold;
 }
 p {
-  font-size: 16px;
+  font-size: 35px;
   color: #cdcdcd;
 }
 
+.jumbotron {
+  background: black;
+  color: white;
+  text-align: center;
+}
+.jumbotron p {
+  color: white;
+  font-size: 26px;
+}
 .navbar-inverse {
   background: #2e2f31;
   border: 0;
@@ -40,4 +47,4 @@ p {
 }
 .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
   background: #2c463c;
-}*/
+}

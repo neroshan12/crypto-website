@@ -1,8 +1,11 @@
 const express = require('express');
+const bodyParser = require('body-parser'); // to handle reading data from <form>
 const app = express();
 global.fetch = require('node-fetch');
 const cc = require('cryptocompare');
 app.set('view engine', 'ejs'); // setting view engine
+app.use(express.static('public'));
+app.use(bodyParser.json());
 
 app.listen(3000, function() {
   console.log('listening on 3000');
