@@ -3,9 +3,9 @@
 }
 
 body {
-  background: #3e4649;
+  background: #282828;
   color: #f7f7f7;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 h1,
 h2 {
@@ -47,4 +47,13 @@ p {
 }
 .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
   background: #2c463c;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 40px;
 }
