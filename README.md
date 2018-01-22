@@ -2,6 +2,26 @@
 
 This web application is designed to display the latest Bitcoin, Ethereum and Ripple prices for USD/EUR/GBP in a simple manner. Most websites provide graphing, historical values, filters etc but this app is designed to provide specific information to anyone with investments in these core cryptocurrencies. The prices are displayed via the cryptocompare API.
 
+## User Stories
+
+```
+As a user,
+So I can track the price of Bitcoin,
+I'd like to see the latest price of Bitcoin in USD/GBP/EUR.
+```
+
+```
+As a user,
+So I can track the price of Ethereum,
+I'd like to see the latest price of Ethereum in USD/GBP/EUR.
+```
+
+```
+As a user,
+So I can track the price of Ripple,
+I'd like to see the latest price of Ripple in USD/GBP/EUR.
+```
+
 ## Tech stack
 
 ```
