@@ -4,16 +4,25 @@ This web application is designed to display the latest Bitcoin, Ethereum and Rip
 
 ## Tech stack
 
+```
 * JavaScript
-* Node
+* node.js
 * Express
+* Bootstrap
+```
 
 ## Running the application
 
+```
 * git clone https://github.com/neroshan12/crypto-website.git
 * npm install
 * run node server.js
+```
 
-## Authors
+## Deployment
+
+Currently working on deploying to AWS.
+
+## Author
 
 * [Nero Siva](https://github.com/neroshan12)
